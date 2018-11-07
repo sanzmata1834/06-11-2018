@@ -7,6 +7,8 @@
 <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
+<form id="form">
 	
 <p>Date: <input type="text" id="datepicker"></p>
 	
@@ -21,10 +23,16 @@
 	
 <input id="cp" placeholder="Code postal">
 <input id="ville" placeholder="Ville">
+<hr>	
+<input id="email" placeholder="email" data-validetta="required,email">
+	
+<button type="submit" id="submit">Envoyer</button>
+</form>
 	
 <script src="js/jquery.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/validetta.min.js"></script>
 <script src="js/scripts.js"></script>		
 </body>
 </html>
